@@ -21,9 +21,11 @@ const Layout = () => {
           </Nav>
         </Container>
       </HeaderStyled>
-      <Suspense fallback={<p>Loading...</p>}>
-        <Outlet />
-      </Suspense>
+      <div className="container">
+        <Suspense fallback={<p>Loading...</p>}>
+          <Outlet />
+        </Suspense>
+      </div>
     </>
   );
 };

@@ -7,15 +7,15 @@ import Shopping from 'pages/ShoppingPage/Shopping';
 
 const App = () => {
   return (
-      <Routes>
-        <Route path='/' element={<Layout/>}>
-          <Route index element={<Home/>}/>
-          <Route path='/categories' element={<Categories/> }/>
-          <Route path='/favorites' element={<Favorites/>} />
-          <Route path='/shopping-card' element={<Shopping/>}/>
-          <Route path='*' />
-        </Route>
-      </Routes>
+    <Routes>
+      <Route path="/" element={<Layout />}>
+        <Route index element={<Home />} />
+        <Route path="/categories" element={<Categories />} />
+        <Route path="/favorites" element={<Favorites />} />
+        <Route path="/shopping-card" element={<Shopping />} />
+        <Route path="*" />
+      </Route>
+    </Routes>
   );
 };
 
