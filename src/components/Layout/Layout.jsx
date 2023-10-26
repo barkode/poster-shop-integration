@@ -3,10 +3,12 @@ import { Outlet } from 'react-router-dom';
 import { Container, HeaderStyled, Link, Nav } from './Layout.styled';
 import Logo from '../Logo/Logo';
 import SearchForm from 'components/SearchForm/SearchForm';
+import HeaderTop from 'components/HeaderTop/HeaderTop';
 
 const Layout = () => {
   return (
     <>
+      <HeaderTop />
       <HeaderStyled>
         <Container>
           <Nav>
