@@ -1,0 +1,87 @@
+[
+    {
+      "id": "1",
+      "name": "Миючий порошок",
+      "description": "Миючий порошок для прання, 1 кг",
+      "img": "https://www.example.com/powder.jpg",
+      "price": "5.99"
+    },
+    {
+      "id": "2",
+      "name": "Гель для ванни",
+      "description": "Ароматичний гель для ванни, 500 мл",
+      "img": "https://www.example.com/shower-gel.jpg",
+      "price": "3.49"
+    },
+    {
+      "id": "3",
+      "name": "Миюча рідина для посуду",
+      "description": "Засіб для миття посуду, 750 мл",
+      "img": "https://www.example.com/dish-soap.jpg",
+      "price": "2.99"
+    },
+    {
+      "id": "4",
+      "name": "Засіб для чищення ванни",
+      "description": "Засіб для чищення ванни та душу, 500 мл",
+      "img": "https://www.example.com/bathroom-cleaner.jpg",
+      "price": "4.49"
+    },
+    {
+      "id": "5",
+      "name": "Пилосос",
+      "description": "Пилосос з потужністю 1800 Вт",
+      "img": "https://www.example.com/vacuum-cleaner.jpg",
+      "price": "79.99"
+    },
+    {
+      "id": "6",
+      "name": "Паперові рушники",
+      "description": "Пачка паперових рушників, 100 шт.",
+      "img": "https://www.example.com/paper-towels.jpg",
+      "price": "4.99"
+    },
+    {
+      "id": "7",
+      "name": "Мило для рук",
+      "description": "Антисептичне мило для рук, 250 мл",
+      "img": "https://www.example.com/hand-soap.jpg",
+      "price": "3.29"
+    },
+    {
+      "id": "8",
+      "name": "Очищувач повітря",
+      "description": "Очищувач повітря з ароматом лаванди, 200 мл",
+      "img": "https://www.example.com/air-freshener.jpg",
+      "price": "2.99"
+    },
+    {
+      "id": "9",
+      "name": "Засіб для видалення плям",
+      "description": "Засіб для видалення плям з одягу, 500 мл",
+      "img": "https://www.example.com/stain-remover.jpg",
+      "price": "4.99"
+    },
+    {
+      "id": "10",
+      "name": "Миючий засіб для підлоги",
+      "description": "Засіб для миття підлоги, 1 л",
+      "img": "https://www.example.com/floor-cleaner.jpg",
+      "price": "3.49"
+    },
+    {
+      "id": "11",
+      "name": "Спрей для вікон",
+      "description": "Засіб для миття вікон, 500 мл",
+      "img": "https://www.example.com/window-cleaner.jpg",
+      "price": "2.99"
+    },
+    {
+      "id": "12",
+      "name": "Серветки для прибирання",
+      "description": "Пачка серветок для прибирання, 50 шт.",
+      "img": "https://www.example.com/cleaning-wipes.jpg",
+      "price": "3.79"
+    }
+  ]
+  
