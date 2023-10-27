@@ -25,7 +25,7 @@ export const Container = styled.div`
 export const HeaderStyled = styled.header`
   border-bottom-width: 1px;
   border-bottom-style: solid;
-  border-bottom-color: var(--lines-background-color);
+  border-bottom-color: red;
 `;
 
 

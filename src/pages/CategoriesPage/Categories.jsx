@@ -1,4 +1,4 @@
-import Hero from "components/Hero/Hero";
+// import Hero from "components/Hero/Hero";
 import { Helmet } from "react-helmet";
 
 const Categories = () => {
@@ -9,7 +9,7 @@ const Categories = () => {
         </Helmet>
         <div>
             <h1>Categories</h1>
-            <Hero />
+            {/* <Hero /> */}
         </div>
         </>
     );
