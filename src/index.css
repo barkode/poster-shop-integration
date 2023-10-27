@@ -16,9 +16,13 @@
   --border-1: #e1e1e1;
   --fm-unna: 'Unna', serif;
   --fm-nunito: 'Nunito Sans', sans-serif;
+  --transition: all 0.3s ease-in-out;
 }
 
 /* Template default CSS */
+*, ::after, ::before {
+  box-sizing: border-box;
+}
 html,
 body {
   height: 100%;
@@ -105,7 +109,10 @@ body::-webkit-scrollbar {
 
 a {
   text-decoration: none;
-  color: var(--para-color);
+  color: var(--black-color);
+  &:hover {
+    color: var(--primary-color);
+  }
 }
 
 .container {

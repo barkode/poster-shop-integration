@@ -2,10 +2,9 @@ import React from 'react';
 import logo from '../../images/logo.jpg';
 
 const Logo = () => {
-    
   return (
     <div>
-      <img src={logo} alt="logo" />
+      <img src={logo} alt="logo" width={150} />
     </div>
   );
 };

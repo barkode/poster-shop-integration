@@ -40,10 +40,10 @@ const Language = () => {
 
   return (
     <>
-      <LanguageContainer onMouseEnter={handleShowLanguageList}>
+      <LanguageContainer onClick={handleShowLanguageList}>
         <LanguageIcon src={getLanguageIcon(selectedLanguage)} alt="Language" />
         <div>{selectedLanguage}</div>
-        <ArrowDownIcon />
+        <ArrowDownIcon  />
         {showLanguageList && (
           <LanguageList onMouseLeave={handleHideLanguageList}>
             <LanguageItem>

@@ -19,4 +19,6 @@ export const TopHeaderLeftItem = styled.div`
   svg {
     margin-right: 5px;
   }
+ 
 `;
+

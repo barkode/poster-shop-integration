@@ -1,10 +1,13 @@
 import styled from "@emotion/styled";
 
-export const Header = styled.header`
-    background-color: #fff;
-    border-bottom: 1px solid #ebebeb;
-    position: relative;
-    z-index: 100;
+export const HeaderWrapper = styled.header`
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 15px;
+    height: 80px;
+    background-color: var(--white-color);
+    // box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.75);
     `;
 
     
