@@ -9,17 +9,15 @@ export const LanguageContainer = styled.div`
 `;
 
 export const LanguageIcon = styled.img`
-  width: 24px;
-  height: 24px;
   margin-right: 5px;
 `;
 
 export const LanguageList = styled.ul`
   list-style: none;
-  margin: 20;
-  padding: 0;
+  margin: 10;
+  padding: 10px;
   background: #222222;
-  width: 100px;
+  width: 120px;
   text-align: left;
   position: absolute;
  
