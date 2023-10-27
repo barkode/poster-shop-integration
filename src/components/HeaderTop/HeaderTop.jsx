@@ -1,12 +1,10 @@
-import { Link } from 'react-router-dom';
 import React from 'react';
-
-import { FaUser } from 'react-icons/fa';
 
 import { TopHeader, Container } from './HeaderTop.styled';
 import TopHeaderLeft from './TopHeaderLeft';
 import TopHeaderRight from './TopHeaderRight';
-import Language from './Language';
+import Language from './LanguageSelect';
+import AuthMenu from './AuthMenu';
 
 function HeaderTop() {
   return (
@@ -15,8 +13,7 @@ function HeaderTop() {
         <TopHeaderLeft />
         <TopHeaderRight />
         <Language />
-        <FaUser />
-        <Link to="#">Login</Link>/<Link to="#">Register</Link>
+        <AuthMenu />
       </Container>
     </TopHeader>
   );

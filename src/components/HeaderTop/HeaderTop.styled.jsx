@@ -3,7 +3,7 @@ import styled from '@emotion/styled';
 
 export const TopHeader = styled.div`
   background-color: #f3f4f6;
-  border: 1px solid red;
+  // border: 1px solid red;
 `;
 
 export const Container = styled.div`
@@ -13,8 +13,3 @@ export const Container = styled.div`
   display: flex;
   justify-content: space-between;
 `;
-
-
-
-
-

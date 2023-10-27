@@ -10,7 +10,7 @@ const TopHeaderLeft = () => {
           just-shop@gmail.com
         </TopHeaderLeftItem>
         <TopHeaderLeftItem>
-          Безкоштовна доставка від 1000 грн
+          Безкоштовна доставка замовлень від 1000 грн
         </TopHeaderLeftItem>
       </TopHeaderLeftContainer>
     </>
