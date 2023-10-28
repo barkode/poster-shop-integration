@@ -6,8 +6,8 @@ export const HeaderWrapper = styled.header`
   justify-content: space-between;
   padding: 0 15px;
   height: 80px;
-  background-color: var(--white-color);
-  box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.75);
+  // background-color: var(--white-color);
+  // box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.75);
 `;
 export const DropDownWrapper = styled.div`
   display: flex;
