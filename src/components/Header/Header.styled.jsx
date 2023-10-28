@@ -15,5 +15,5 @@ export const DropDownWrapper = styled.div`
   padding: 10px 15px;
   gap: 40px;
   align-items: center;
-  border: 1px solid blue;
+  // border: 1px solid blue;
 `;
