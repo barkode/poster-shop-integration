@@ -1,6 +1,6 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
-import { FaFacebook, FaTwitter, FaLinkedin, FaViber } from 'react-icons/fa'
+import { FaFacebook, FaViber, FaTelegram, FaInstagram } from 'react-icons/fa'
 import { TopHeaderRightContainer, TopHeaderRightItem } from './TopHeaderRight.styled'
 
 const TopHeaderRight = () => {
@@ -15,12 +15,12 @@ const TopHeaderRight = () => {
           <TopHeaderRightItem>
             <Link>
               {' '}
-              <FaTwitter />
+              <FaTelegram />
             </Link>
           </TopHeaderRightItem>
           <TopHeaderRightItem>
             <Link>
-              <FaLinkedin />
+              <FaInstagram />
             </Link>
           </TopHeaderRightItem>
           <TopHeaderRightItem>
