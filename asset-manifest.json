@@ -1,14 +1,14 @@
 {
   "files": {
-    "main.css": "/poster-shop-integration/static/css/main.ae011391.css",
+    "main.css": "/poster-shop-integration/static/css/main.fe30c47e.css",
     "main.js": "/poster-shop-integration/static/js/main.74621069.js",
     "static/media/logo.jpg": "/poster-shop-integration/static/media/logo.af5fc3943e50c504c21d.jpg",
     "index.html": "/poster-shop-integration/index.html",
-    "main.ae011391.css.map": "/poster-shop-integration/static/css/main.ae011391.css.map",
+    "main.fe30c47e.css.map": "/poster-shop-integration/static/css/main.fe30c47e.css.map",
     "main.74621069.js.map": "/poster-shop-integration/static/js/main.74621069.js.map"
   },
   "entrypoints": [
-    "static/css/main.ae011391.css",
+    "static/css/main.fe30c47e.css",
     "static/js/main.74621069.js"
   ]
 }
