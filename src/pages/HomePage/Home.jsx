@@ -1,4 +1,4 @@
-// import Hero from "components/Hero/Hero";
+import Hero from "components/Hero/Hero";
 import { Helmet } from "react-helmet";
 
 const Home = () => {
@@ -8,8 +8,7 @@ const Home = () => {
             <title>Home</title>
         </Helmet>
         <div>
-        <h1>Home page</h1>
-        {/* <Hero /> */}
+        <Hero />
         </div>
         </>
     );
