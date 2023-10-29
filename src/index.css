@@ -16,15 +16,27 @@
   --border-1: #e1e1e1;
   --fm-unna: 'Unna', serif;
   --fm-nunito: 'Nunito Sans', sans-serif;
+  --transition: all 0.3s ease-in-out;
 }
 
 /* Template default CSS */
+*,
+::after,
+::before {
+  box-sizing: border-box;
+}
 html,
 body {
+  margin: 0;
   height: 100%;
   font-family: 'Cairo', sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+}
+
+ul,
+li {
+  list-style: none;
 }
 
 h1,
@@ -105,10 +117,12 @@ body::-webkit-scrollbar {
 
 a {
   text-decoration: none;
-  color: var(--para-color);
+  color: var(--heading-color-2);
+  &:hover {
+    color: var(--primary-color);
+  }
 }
 
-/* 
 .container {
   width: 100%;
   padding-left: 10px;
@@ -139,4 +153,4 @@ a {
     padding-left: 34px;
     padding-right: 34px;
   }
-} */
+}

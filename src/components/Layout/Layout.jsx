@@ -1,9 +1,8 @@
 import { Suspense } from 'react';
 import { Outlet } from 'react-router-dom';
-import { Container, HeaderStyled, Link, Nav } from './Layout.styled';
-import Logo from '../Logo/Logo';
-import SearchForm from 'components/SearchForm/SearchForm';
-import HeaderTop from 'components/HeaderTop/HeaderTop';
+import { Container, HeaderStyled } from './Layout.styled';
+import Header from 'components/Header/Header';
+import HeaderTop from 'components/HeaderTop';
 
 const Layout = () => {
   return (
@@ -11,16 +10,7 @@ const Layout = () => {
       <HeaderTop />
       <HeaderStyled>
         <Container>
-          <Nav>
-            <Link to="/">
-              <Logo />
-            </Link>
-            <SearchForm />
-            <Link to="/">Головна</Link>
-            <Link to="/categories">Категорії</Link>
-            <Link to="/favorites">Улюблені</Link>
-            <Link to="/shopping-card">Корзина</Link>
-          </Nav>
+          <Header />
         </Container>
       </HeaderStyled>
       <div className="container">
