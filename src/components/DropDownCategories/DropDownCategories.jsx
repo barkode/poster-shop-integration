@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import { FaBars } from 'react-icons/fa';
 import {
@@ -9,19 +9,25 @@ import {
 } from './DropDownCategories.styled';
 
 const DropDownCategories = () => {
+  const [isOpen, setIsOpen] = useState(true);
+  const toggleMenu = () => {
+    setIsOpen(!isOpen);
+  };
+
   return (
     <div className="dropdown">
       <ButtonDrop
-        className="toggle-btn dropdown-toggle"
+        className={`toggle-btn dropdown-toggle ${isOpen ? 'show' : ''}`}
         type="button"
         data-bs-toggle="dropdown"
-        aria-expanded="true"
+        aria-expanded={isOpen}
+        onClick={toggleMenu}
       >
         <FaBars />
         <Span>Всі відділи</Span>
       </ButtonDrop>
 
-      <DropdownMenu className="dropdown-menu">
+      <DropdownMenu className={`dropdown-menu ${isOpen ? 'show' : ''}`}>
         <DropdownItem className="dropdown-item">
           <Link to="/fresh-meat">Fresh Meat</Link>
         </DropdownItem>
