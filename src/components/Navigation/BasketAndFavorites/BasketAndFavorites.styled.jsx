@@ -48,6 +48,6 @@ export const CartPrice = styled.div`
 `;
 
 export const CartPriceValue = styled.span`
-  color: $heading-color-2;
+  color: var(--heading-color-2);
   font-weight: 700;
 `;

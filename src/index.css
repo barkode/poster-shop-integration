@@ -20,7 +20,9 @@
 }
 
 /* Template default CSS */
-*, ::after, ::before {
+*,
+::after,
+::before {
   box-sizing: border-box;
 }
 html,
@@ -30,6 +32,11 @@ body {
   font-family: 'Cairo', sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+}
+
+ul,
+li {
+  list-style: none;
 }
 
 h1,
@@ -110,7 +117,7 @@ body::-webkit-scrollbar {
 
 a {
   text-decoration: none;
-  color: var(--black-color);
+  color: var(--heading-color-2);
   &:hover {
     color: var(--primary-color);
   }
