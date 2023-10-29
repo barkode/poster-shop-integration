@@ -7,7 +7,6 @@ export const ButtonDrop = styled.div`
   background: var(--primary-color);
   color: var(--white-color);
   padding: 10px 25px 10px 40px;
-  
   height: 52px;
   `;
 

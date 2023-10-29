@@ -18,7 +18,7 @@ const DropDownCategories = () => {
         aria-expanded="true"
       >
         <FaBars />
-        <Span>All departments</Span>
+        <Span>Всі відділи</Span>
       </ButtonDrop>
 
       <DropdownMenu className="dropdown-menu">
