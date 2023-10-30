@@ -1,18 +1,33 @@
-import {SearchFormContainer} from "./SearchForm.styled";
+import React from 'react';
+import { HeroSearchForm } from './SearchForm.styled';
+import { FaAngleDown } from 'react-icons/fa';
+import { Container } from 'components/Hero/Hero.styled';
 
 const SearchForm = () => {
-    return (
-      <SearchFormContainer>
-        <select>
-          <option value="all">All Categories</option>
-          <option value="category1">Category 1</option>
-          <option value="category2">Category 2</option>
-          <option value="category3">Category 3</option>
-        </select>
-        <input type="text" placeholder="What do you need?" />
-        <button type="submit">Пошук</button>
-      </SearchFormContainer>
-    );
-  };
-  
-  export default SearchForm;
+  return (
+    <Container>
+      <HeroSearchForm>
+        <div className="hero__search__form">
+          <form action="#">
+            <div className="hero__search__categories">
+              Всі категорії
+              <FaAngleDown
+                style={{
+                  position: 'absolute',
+                  right: '14px',
+                  top: '14px',
+                }}
+              />
+            </div>
+            <input type="text" placeholder="What do you need?" />
+            <button type="submit" className="site-btn">
+              Пошук
+            </button>
+          </form>
+        </div>
+      </HeroSearchForm>
+    </Container>
+  );
+};
+
+export default SearchForm;

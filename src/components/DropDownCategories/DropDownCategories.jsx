@@ -1,56 +1,67 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import { FaBars } from 'react-icons/fa';
-import { ButtonDrop, Span } from './DropDownCategories.styled';
+import {
+  ButtonDrop,
+  Span,
+  DropdownMenu,
+  DropdownItem,
+} from './DropDownCategories.styled';
 
 const DropDownCategories = () => {
+  const [isOpen, setIsOpen] = useState(true);
+  const toggleMenu = () => {
+    setIsOpen(!isOpen);
+  };
+
   return (
     <div className="dropdown">
       <ButtonDrop
-        className="toggle-btn dropdown-toggle"
+        className={`toggle-btn dropdown-toggle ${isOpen ? 'show' : ''}`}
         type="button"
         data-bs-toggle="dropdown"
-        aria-expanded="true"
+        aria-expanded={isOpen}
+        onClick={toggleMenu}
       >
         <FaBars />
-        <Span>All departments</Span>
+        <Span>Всі відділи</Span>
       </ButtonDrop>
 
-      <ul className="dropdown-menu">
-        <li className="dropdown-item">
+      <DropdownMenu className={`dropdown-menu ${isOpen ? 'show' : ''}`}>
+        <DropdownItem className="dropdown-item">
           <Link to="/fresh-meat">Fresh Meat</Link>
-        </li>
-        <li className="dropdown-item">
+        </DropdownItem>
+        <DropdownItem className="dropdown-item">
           <Link to="/vegetables">Vegetables</Link>
-        </li>
-        <li className="dropdown-item">
+        </DropdownItem>
+        <DropdownItem className="dropdown-item">
           <Link to="/fruit-nut-gifts">Fruit & Nut Gifts</Link>
-        </li>
-        <li className="dropdown-item">
+        </DropdownItem>
+        <DropdownItem className="dropdown-item">
           <Link to="/fresh-berries">Fresh Berries</Link>
-        </li>
-        <li className="dropdown-item">
+        </DropdownItem>
+        <DropdownItem className="dropdown-item">
           <Link to="/ocean-foods">Ocean Foods</Link>
-        </li>
-        <li className="dropdown-item">
+        </DropdownItem>
+        <DropdownItem className="dropdown-item">
           <Link to="/butter-eggs">Butter & Eggs</Link>
-        </li>
-        <li className="dropdown-item">
+        </DropdownItem>
+        <DropdownItem className="dropdown-item">
           <Link to="/fastfood">Fastfood</Link>
-        </li>
-        <li className="dropdown-item">
+        </DropdownItem>
+        <DropdownItem className="dropdown-item">
           <Link to="/fresh-onion">Fresh Onion</Link>
-        </li>
-        <li className="dropdown-item">
+        </DropdownItem>
+        <DropdownItem className="dropdown-item">
           <Link to="/papayaya-crisps">Papayaya & Crisps</Link>
-        </li>
-        <li className="dropdown-item">
+        </DropdownItem>
+        <DropdownItem className="dropdown-item">
           <Link to="/oatmeal">Oatmeal</Link>
-        </li>
-        <li className="dropdown-item">
+        </DropdownItem>
+        <DropdownItem className="dropdown-item">
           <Link to="/fresh-bananas">Fresh Bananas</Link>
-        </li>
-      </ul>
+        </DropdownItem>
+      </DropdownMenu>
     </div>
   );
 };

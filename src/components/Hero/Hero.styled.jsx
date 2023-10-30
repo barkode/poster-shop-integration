@@ -1,21 +1,17 @@
-import styled from "@emotion/styled";
+import styled from '@emotion/styled';
 
 export const Container = styled.div`
-   display: flex;
-    `;
+  display: flex;
+  flex: 1;
+  width: 70%;
+  float: right;
+`;
 
 export const Aside = styled.aside`
-    width: 320px;
-    padding: 15px;
-    background-color: var(--secondary-background-color);
-    border-radius: 4px;
-    margin-right: 15px;
-    @media screen and (min-width: 768px) {
-        width: 360px;
-        padding: 30px;
-    }
-    `;
-
-
-
-
+  padding: 15px;
+  background-color: var(--background);
+  border-radius: 4px;
+  margin-right: 15px;
+  height: 100%;
+  width: 100%;
+`;
