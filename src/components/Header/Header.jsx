@@ -9,10 +9,12 @@ import DropDownCategories from 'components/DropDownCategories/DropDownCategories
 import { DropDownWrapper } from './Header.styled';
 import SearchForm from 'components/SearchForm/SearchForm';
 import PhoneConectSupport from 'components/PhoneConectSupport/PhoneConnectSupport';
+import MobileMenu from 'components/MobileMenu/MobileMenu';
 
 const Header = () => {
   return (
     <>
+      <MobileMenu />
       {/* <HeaderTop /> */}
       <HeaderWrapper>
         <Link to="/">
