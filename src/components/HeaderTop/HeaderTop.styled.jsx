@@ -4,6 +4,9 @@ import styled from '@emotion/styled';
 export const TopHeader = styled.div`
   background-color: #f3f4f6;
   // border: 1px solid red;
+  @media (max-width: 991px) {
+    display: none;
+  }
 `;
 
 export const Container = styled.div`
