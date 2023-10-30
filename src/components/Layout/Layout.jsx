@@ -3,6 +3,7 @@ import { Outlet } from 'react-router-dom';
 import { Container, HeaderStyled } from './Layout.styled';
 import Header from 'components/Header/Header';
 import HeaderTop from 'components/HeaderTop/HeaderTop';
+import Footer from 'components/Footer/Footer';
 
 const Layout = () => {
   return (
@@ -18,6 +19,7 @@ const Layout = () => {
           <Outlet />
         </Suspense>
       </div>
+      <Footer />
     </>
   );
 };
