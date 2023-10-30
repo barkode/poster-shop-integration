@@ -8,7 +8,6 @@ const Home = () => {
             <title>Home</title>
         </Helmet>
         <div>
-        <h1>Home page</h1>
         <Hero />
         </div>
         </>

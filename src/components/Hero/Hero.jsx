@@ -1,18 +1,19 @@
 import React from 'react';
 import { Aside, Container } from './Hero.styled';
-import ProductList from 'components/ProductList/ProductList';
-
-import SideBar from 'components/SideBar/SideBar';
 
 const Hero = () => {
   return (
     <Container>
       <Aside>
-        <SideBar />
+        <h1
+          style={{
+            color: 'var(--primary-color)',
+          }}
+        >
+          Тут може бути ваша реклама
+        </h1>
       </Aside>
-      <div>
-        <ProductList />
-      </div>
+      <div></div>
     </Container>
   );
 };
