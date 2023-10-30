@@ -34,7 +34,7 @@ export const HeroSearchForm = styled.div`
         right: 14px;
         top: 14px;
       }
-      @media (max-width: 1150px) {
+      @media (max-width: 767px) {
         display: none;
       }
     }
@@ -50,7 +50,7 @@ export const HeroSearchForm = styled.div`
       &::placeholder {
         color: #b2b2b2;
       }
-      @media (max-width: 1150px) {
+      @media (max-width: 767px) {
         width: 100%;
       }
     }
