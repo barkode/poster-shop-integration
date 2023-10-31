@@ -131,26 +131,41 @@ a {
   margin-right: auto;
 }
 
-@media screen and (min-width: 320px) {
+/* @media screen and (min-width: 320px) {
   .container {
     width: 320px;
-    padding-left: 10px;
-    padding-right: 10px;
+  }
+} */
+
+/* @media screen and (min-width: 480px) {
+  .container {
+    width: 480px;
+  }
+} */
+
+/* @media screen and (min-width: 768px) {
+  .container {
+    width: 768px;
+  }
+} */
+
+@media screen and (min-width: 1024px) {
+  .container {
+    max-width: 1024px;
+    padding: 0;
   }
 }
 
-@media screen and (min-width: 834px) {
+@media screen and (min-width: 1200px) {
   .container {
-    width: 834px;
-    padding-left: 27px;
-    padding-right: 27px;
+    max-width: 1170px;
+    padding: 0;
   }
 }
 
 @media screen and (min-width: 1440px) {
   .container {
-    width: 1440px;
-    padding-left: 34px;
-    padding-right: 34px;
+    width: 1360px;
+    padding: 0;
   }
 }
