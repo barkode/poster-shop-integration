@@ -1,5 +1,3 @@
-import React from 'react';
-
 import DropDownCategories from 'components/DropDownCategories/DropDownCategories';
 import SearchForm from 'components/SearchForm/SearchForm';
 import PhoneConectSupport from 'components/PhoneConectSupport/PhoneConnectSupport';

@@ -39,6 +39,7 @@ export const CartItemCount = styled.span`
   position: absolute;
   top: -6px;
   right: -12px;
+  z-index: -1;
 `;
 
 export const CartPrice = styled.div`
