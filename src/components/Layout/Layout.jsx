@@ -19,7 +19,9 @@ const Layout = () => {
           <Outlet />
         </Suspense>
       </div>
-      <Footer />
+      <footer>
+        <Footer />
+      </footer>
     </>
   );
 };

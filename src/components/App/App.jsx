@@ -1,5 +1,5 @@
 import { Route, Routes } from 'react-router-dom';
-import Layout from './Layout/Layout';
+import Layout from 'components/Layout/Layout';
 import Home from 'pages/HomePage/Home';
 import Categories from 'pages/CategoriesPage/Categories';
 import Favorites from 'pages/FavoritesPage/Favorites';
@@ -15,8 +15,8 @@ const App = () => {
         <Route index element={<Home />} />
         <Route path="/products" element={<Products />} />
         <Route path="/categories" element={<Categories />} />
-        <Route path="/about" element={<About/>} />
-        <Route path="/contact" element={<Contacts/>} />
+        <Route path="/about" element={<About />} />
+        <Route path="/contact" element={<Contacts />} />
         <Route path="/favorites" element={<Favorites />} />
         <Route path="/shopping-card" element={<Shopping />} />
         <Route path="*" />
