@@ -5,13 +5,13 @@ import { Container } from './Hero.styled';
 
 const Hero = () => {
   return (
-    <div className="row">
+    <>
       <Container>
         <DropDownCategories />
         <SearchForm />
         <PhoneConectSupport />
       </Container>
-    </div>
+    </>
   );
 };
 

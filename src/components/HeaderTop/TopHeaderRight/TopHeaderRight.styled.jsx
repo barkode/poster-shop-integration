@@ -4,10 +4,6 @@ export const TopHeaderRightContainer = styled.div`
   display: flex;
   align-items: center;
   justify-content: flex-end;
-  // @media (max-width: 991px) {
-  //   justify-content: center;
-  //   margin-top: 15px;
-  // }
 `;
 
 

@@ -11,16 +11,16 @@ const Header = () => {
   return (
     <>
       <MobileMenu />
-      <div className="row">
-        <HeaderTop />
-        <HeaderWrapper>
-          <Link to="/">
-            <Logo />
-          </Link>
-          <Navigation />
-          <BasketAndFavorites />
-        </HeaderWrapper>
-      </div>
+      
+      <HeaderTop />
+      <HeaderWrapper>
+        <Link to="/">
+          <Logo />
+        </Link>
+        <Navigation />
+        <BasketAndFavorites />
+      </HeaderWrapper>
+      
     </>
   );
 };
