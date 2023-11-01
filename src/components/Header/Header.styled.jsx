@@ -9,4 +9,8 @@ export const HeaderWrapper = styled.header`
   justify-content: space-between;
   height: 80px;
   // border: 1px solid red;
+
+  @media screen and (max-width: 991px) {
+    display: none;
+  }
 `;
