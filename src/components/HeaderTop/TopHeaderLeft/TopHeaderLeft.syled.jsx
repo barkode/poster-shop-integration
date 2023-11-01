@@ -6,6 +6,11 @@ export const TopHeaderLeftContainer = styled.div`
   @media (max-width: 991px) {
     justify-content: center;
   }
+  @media (max-width: 991px) {
+    gap: 10px;
+    flex-direction: column;
+    align-items: start;
+  }
 `;
 export const TopHeaderLeftItem = styled.div`
   display: flex;
@@ -19,6 +24,7 @@ export const TopHeaderLeftItem = styled.div`
   svg {
     margin-right: 5px;
   }
- 
-`;
+  
+
+ `;
 

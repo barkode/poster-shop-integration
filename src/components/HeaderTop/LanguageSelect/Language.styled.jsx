@@ -5,6 +5,7 @@ export const LanguageContainer = styled.div`
   position: relative;
   cursor: pointer;
   display: flex;
+  align-items: center;
 `;
 
 export const LanguageIcon = styled.img`

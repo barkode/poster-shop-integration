@@ -1,10 +1,10 @@
 import { createPortal } from 'react-dom';
-import { Overlay } from './MobileModal.styled';
+import { Overlay,NavModal } from './MobileModal.styled';
+import { Link } from 'react-router-dom';
 import Logo from 'components/Logo/Logo';
 import BasketAndFavorites from 'components/Navigation/BasketAndFavorites';
 import LanguageSelect from 'components/HeaderTop/LanguageSelect';
 import AuthMenu from 'components/HeaderTop/AuthMenu';
-import Navigation from 'components/Navigation/Navigation';
 import TopHeaderRight from 'components/HeaderTop/TopHeaderRight';
 import TopHeaderLeft from 'components/HeaderTop/TopHeaderLeft';
 
@@ -18,6 +18,8 @@ export const MobileModal = () => {
         style={{
           display: 'flex',
           flexDirection: 'column',
+          justifyContent: 'space-between',
+          // height: '100%',
         }}
       >
         <Logo />
@@ -25,15 +27,28 @@ export const MobileModal = () => {
         <div
           style={{
             display: 'flex',
-            justifyContent: 'space-between',
+            gap: '10px',
+            justifyContent: 'start',
+            alignItems: 'center',
           }}
         >
           <LanguageSelect />
           <AuthMenu />
         </div>
-
-        <Navigation />
+        <NavModal>
+          <Link to="/">Головна</Link>
+          <hr />
+          <Link to="/products">Магазин</Link>
+          <hr />
+          <Link to="/categories">Категорії</Link>
+          <hr />
+          <Link to="/about">Про нас</Link>
+          <hr />
+          <Link to="/contact">Контакти</Link>
+          <hr />
+        </NavModal>
         <TopHeaderRight />
+        <hr />
         <TopHeaderLeft />
       </div>
     </Overlay>,
