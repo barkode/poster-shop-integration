@@ -9,6 +9,10 @@ export const HeaderCartContainer = styled.div`
 export const CartList = styled.ul`
   display: inline-block;
   margin-right: 25px;
+  @media screen and (max-width: 767px) {
+    display: flex;
+    // align-items: center;
+  }
 `;
 
 export const CartListItem = styled.li`
@@ -19,6 +23,7 @@ export const CartListItem = styled.li`
   &:last-child {
     margin-right: 0;
   }
+ 
 `;
 
 export const CartLink = styled(Link)`
@@ -39,12 +44,14 @@ export const CartItemCount = styled.span`
   position: absolute;
   top: -6px;
   right: -12px;
+  z-index: -1;
 `;
 
 export const CartPrice = styled.div`
   font-size: 14px;
   color: #6f6f6f;
   display: inline-block;
+  
 `;
 
 export const CartPriceValue = styled.span`

@@ -8,7 +8,7 @@ export const ButtonDrop = styled.div`
   color: var(--white-color);
   padding: 10px 25px 10px 40px;
   height: 52px;
-  `;
+`;
 
 export const Span = styled.span`
   font-size: 16px;
@@ -17,10 +17,9 @@ export const Span = styled.span`
 }
 `;
 export const DropdownMenu = styled.ul`
-float: left;
+  float: left;
   width: 100%;
   border: 1px solid var(--border);
-  padding-left: 40px;
   padding-top: 10px;
   padding-bottom: 12px;
 `;

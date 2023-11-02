@@ -1,8 +1,7 @@
-
 import styled from '@emotion/styled';
 
 export const HeroSearchForm = styled.div`
-   width: 610px;
+  width: 610px;
   height: 50px;
   border: 1px solid var(--border);
   position: relative;
@@ -13,7 +12,7 @@ export const HeroSearchForm = styled.div`
       width: 30%;
       float: left;
       font-size: 16px;
-      color: $normal-color;
+      color: var(--normal-color);
       font-weight: 700;
       padding-left: 18px;
       padding-top: 11px;
@@ -27,13 +26,16 @@ export const HeroSearchForm = styled.div`
         width: 1px;
         background: var(--black-color);
         opacity: 0.1;
-        content: "";
+        content: '';
       }
 
       span {
         position: absolute;
         right: 14px;
         top: 14px;
+      }
+      @media (max-width: 767px) {
+        display: none;
       }
     }
 
@@ -48,6 +50,9 @@ export const HeroSearchForm = styled.div`
       &::placeholder {
         color: #b2b2b2;
       }
+      @media (max-width: 767px) {
+        width: 100%;
+      }
     }
 
     button {
@@ -57,10 +62,8 @@ export const HeroSearchForm = styled.div`
       height: 50px;
     }
   }
-  
 `;
 export const Container = styled.div`
-overflow: hidden;
-margin-bottom: 30px;
+  overflow: hidden;
+  margin-bottom: 30px;
 `;
-
