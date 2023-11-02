@@ -30,16 +30,20 @@ const BasketAndFavorites = () => {
     <HeaderCartContainer>
       <CartList>
         <CartListItem>
-          <CartLink to="/favorites">
-            <FaHeart />
-            <CartItemCount>1</CartItemCount>
-          </CartLink>
+          <div data-bs-dismiss="offcanvas">
+            <CartLink to="/favorites">
+              <FaHeart />
+              <CartItemCount>1</CartItemCount>
+            </CartLink>
+          </div>
         </CartListItem>
         <CartListItem>
-          <CartLink to="/shopping-card">
-            <FaShoppingBag />
-            <CartItemCount>3</CartItemCount>
-          </CartLink>
+          <div data-bs-dismiss="offcanvas">
+            <CartLink to="/shopping-card">
+              <FaShoppingBag />
+              <CartItemCount>3</CartItemCount>
+            </CartLink>
+          </div>
         </CartListItem>
       </CartList>
       <CartPrice>
