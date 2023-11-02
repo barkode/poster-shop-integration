@@ -1,11 +1,12 @@
 import React from 'react';
 import logo from '../../images/logo.jpg';
+import { LogoWrapper } from './Logo.styled';
 
 const Logo = () => {
   return (
-    <div>
-      <img src={logo} alt="logo" width={150} />
-    </div>
+    <LogoWrapper>
+      <img src={logo} alt="logo" />
+    </LogoWrapper>
   );
 };
 

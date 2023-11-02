@@ -1,5 +1,8 @@
 import { FaEnvelope } from 'react-icons/fa';
-import { TopHeaderLeftContainer, TopHeaderLeftItem } from './TopHeaderLeft.syled';
+import {
+  TopHeaderLeftContainer,
+  TopHeaderLeftItem,
+} from './TopHeaderLeft.syled';
 
 const TopHeaderLeft = () => {
   return (
@@ -9,7 +12,7 @@ const TopHeaderLeft = () => {
           <FaEnvelope />
           just-shop@gmail.com
         </TopHeaderLeftItem>
-        <TopHeaderLeftItem>
+        <TopHeaderLeftItem style={{ color: 'red' }}>
           Безкоштовна доставка замовлень від 1000 грн
         </TopHeaderLeftItem>
       </TopHeaderLeftContainer>

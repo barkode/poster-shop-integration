@@ -14,7 +14,7 @@ import {
 
 const Language = () => {
   const [showLanguageList, setShowLanguageList] = useState(false);
-  const [selectedLanguage, setSelectedLanguage] = useState('English');
+  const [selectedLanguage, setSelectedLanguage] = useState('Ukraine');
 
   const handleShowLanguageList = () => {
     setShowLanguageList(!showLanguageList);

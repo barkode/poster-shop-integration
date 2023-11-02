@@ -3,9 +3,9 @@ import { FiChevronDown } from 'react-icons/fi';
 
 export const LanguageContainer = styled.div`
   position: relative;
-  margin-right: 40px;
   cursor: pointer;
   display: flex;
+  align-items: center;
 `;
 
 export const LanguageIcon = styled.img`
@@ -20,17 +20,16 @@ export const LanguageList = styled.ul`
   width: 120px;
   text-align: left;
   position: absolute;
- 
+
   li {
     list-style: none;
-    
+
     a {
       font-size: 14px;
       color: #ffffff;
       padding: 5px 10px;
     }
   }
-  
 `;
 
 export const LanguageItem = styled.li`
@@ -41,7 +40,7 @@ export const LanguageItem = styled.li`
 
 export const LanguageLink = styled.a`
   text-decoration: none;
-  &:hover{
+  &:hover {
     color: var(--primary-color);
   }
 `;
