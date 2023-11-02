@@ -2,9 +2,11 @@ import { createStore } from 'redux';
 import { devToolsEnhancer } from '@redux-devtools/extension';
 
 const initialState = {
-  themes: {
+  theme: {
     colorTheme: 'light',
   },
+  products: {},
+  language: { language: 'ua' },
 };
 
 const rootReducer = (state = initialState, action) => {
