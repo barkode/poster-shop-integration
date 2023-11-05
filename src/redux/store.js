@@ -1,18 +1,6 @@
 import { createStore } from 'redux';
 import { devToolsEnhancer } from '@redux-devtools/extension';
-
-const initialState = {
-  theme: {
-    colorTheme: 'light',
-  },
-  products: {},
-  language: { language: 'ua' },
-};
-
-const rootReducer = (state = initialState, action) => {
-  return state;
-};
+import appReducer from './reducers';
 
 const enhancer = devToolsEnhancer();
-
-export const store = createStore(rootReducer, enhancer);
+export const store = createStore(appReducer, enhancer);
