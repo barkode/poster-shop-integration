@@ -1,6 +1,3 @@
-import { SET_LANGUAGE } from './types';
+import { createAction } from '@reduxjs/toolkit';
 
-export const setLanguage = value => ({
-  type: SET_LANGUAGE,
-  payload: value,
-});
+export const setLanguage = createAction('SET_LANGUAGE');

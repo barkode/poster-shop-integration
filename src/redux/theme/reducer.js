@@ -1,17 +1,13 @@
-import { SET_COLOR_THEME } from './types';
+import { createReducer } from '@reduxjs/toolkit';
+import { setColorTheme } from './actions';
 
 const themeState = {
   colorTheme: 'light',
 };
 
-export const colorThemeReducer = (state = themeState, action) => {
-  switch (action.type) {
-    case SET_COLOR_THEME:
-      return {
-        ...state,
-        colorTheme: action.payload,
-      };
-    default:
-      return state;
-  }
-};
+export const colorThemeReducer = createReducer(themeState, {
+  [setColorTheme]: (state, action) => ({
+    ...state,
+    colorTheme: action.payload,
+  }),
+});

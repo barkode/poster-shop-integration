@@ -10,11 +10,11 @@ import './index.css';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
-  <React.StrictMode>
-    <Provider store={store}>
-      <BrowserRouter basename="/poster-shop-integration">
-        <App />
-      </BrowserRouter>
-    </Provider>
-  </React.StrictMode>
+  // <React.StrictMode>
+  <Provider store={store}>
+    <BrowserRouter basename="/poster-shop-integration">
+      <App />
+    </BrowserRouter>
+  </Provider>
+  // </React.StrictMode>
 );

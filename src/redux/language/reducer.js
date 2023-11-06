@@ -1,17 +1,13 @@
-import { SET_LANGUAGE } from './types';
+import { createReducer } from '@reduxjs/toolkit';
+import { setLanguage } from './actions';
 
 const languageState = {
   language: 'ua',
 };
 
-export const languageReducer = (state = languageState, action) => {
-  switch (action.type) {
-    case SET_LANGUAGE:
-      return {
-        ...state,
-        language: action.payload,
-      };
-    default:
-      return state;
-  }
-};
+export const languageReducer = createReducer(languageState, {
+  [setLanguage]: (state, action) => ({
+    ...state,
+    language: action.payload,
+  }),
+});
