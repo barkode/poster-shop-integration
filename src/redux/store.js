@@ -6,5 +6,7 @@ export const store = configureStore({
     themes: colorThemeReducer,
     languages: languageReducer,
     // data: productsReducer,
+    // basket: basketReducer,
+    //favorite: favoriteReducer,
   },
 });
