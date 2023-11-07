@@ -5,7 +5,7 @@ export const store = configureStore({
   reducer: {
     themes: colorThemeReducer,
     languages: languageReducer,
-    // data: productsReducer,
+    // products: productsReducer,
     // basket: basketReducer,
     //favorite: favoriteReducer,
   },

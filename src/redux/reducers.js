@@ -1,5 +1,5 @@
-export { colorThemeReducer } from './theme/reducer';
-export { languageReducer } from './language/reducer';
-// data: productsReducer,
+export { colorThemeReducer } from './theme/slice';
+export { languageReducer } from './language/slice';
+// products: productsReducer,
 // basket: basketReducer,
 //favorite: favoriteReducer,

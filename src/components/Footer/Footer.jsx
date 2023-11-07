@@ -1,10 +1,10 @@
 import React from 'react';
 import { useSelector, useDispatch } from 'react-redux';
-import { getColorTheme } from 'redux/theme/selector';
-import { setLanguage } from 'redux/language/actions';
-import { getAllProducts } from 'redux/data/selector';
+import { getColorTheme } from 'redux/theme/selectors';
 import { getLanguage } from 'redux/language/selectors';
-import { setColorTheme } from 'redux/theme/actions';
+import { getAllProducts } from 'redux/data/selectors';
+import { setLanguage } from 'redux/language/slice';
+import { setColorTheme } from 'redux/theme/slice';
 
 const Footer = () => {
   const colorTheme = useSelector(getColorTheme);
