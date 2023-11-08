@@ -1,4 +1,6 @@
 import { createSlice } from '@reduxjs/toolkit';
+import storage from 'redux-persist/lib/storage';
+import { persistReducer } from 'redux-persist';
 
 const languageSlice = createSlice({
   name: 'language',
@@ -12,6 +14,18 @@ const languageSlice = createSlice({
   },
 });
 
+const persistConfig = {
+  key: 'language',
+  storage,
+};
+
+export const languageReducer = persistReducer(
+  persistConfig,
+  languageSlice.reducer
+);
+
 export const { setLanguage } = languageSlice.actions;
 
-export const languageReducer = languageSlice.reducer;
+// Selectors
+
+export const getLanguage = state => state.languages.language;
