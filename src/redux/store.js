@@ -1,5 +1,5 @@
 import { configureStore } from '@reduxjs/toolkit';
-import { colorThemeReducer, languageReducer } from './slices';
+import { colorThemeReducer, languageReducer, productsReducer } from './slices';
 import {
   persistStore,
   FLUSH,
@@ -14,7 +14,7 @@ export const store = configureStore({
   reducer: {
     themes: colorThemeReducer,
     languages: languageReducer,
-    // products: productsReducer,
+    products: productsReducer,
     // basket: basketReducer,
     //favorite: favoriteReducer,
     //auth: userReducer,
