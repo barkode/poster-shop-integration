@@ -1,6 +1,6 @@
 import { createSlice } from '@reduxjs/toolkit';
-import storage from 'redux-persist/lib/storage';
 import { persistReducer } from 'redux-persist';
+import storage from 'redux-persist/lib/storage';
 
 const colorThemeSlice = createSlice({
   name: 'colorTheme',
@@ -9,7 +9,7 @@ const colorThemeSlice = createSlice({
   },
   reducers: {
     setColorTheme(state, action) {
-      return { ...state, colorTheme: action.payload };
+      state.colorTheme = action.payload;
     },
   },
 });
