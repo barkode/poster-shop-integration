@@ -1,6 +1,6 @@
-export * from './theme/slice';
-export * from './language/slice';
+export * from 'redux/theme/sliceTheme';
+export * from 'redux/language/sliceLanguage';
+export * from 'redux/products/sliceProducts';
 // export * from './auth/slice';
 // export * from './basket/slice';
 // export * from './favorite/slice';
-// export * from './products/slice';
