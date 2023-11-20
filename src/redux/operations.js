@@ -1,29 +1,44 @@
 import axios from 'axios';
-import {
-  fetchingInProgress,
-  fetchingSuccess,
-  fetchingError,
-} from 'redux/slices';
+import { createAsyncThunk } from '@reduxjs/toolkit';
 
-const TOKEN = '739097:7644670d44297af5ead5989fce1a704f';
+// import {
+//   fetchingInProgress,
+//   fetchingSuccess,
+//   fetchingError,
+// } from 'redux/slices';
 
-// axios.defaults.baseURL = 'https://joinposter.com/api';
+// const TOKEN = '739097:7644670d44297af5ead5989fce1a704f';
 
-export const fetchAllProducts = () => async dispatch => {
-  try {
-    dispatch(fetchingInProgress());
-    const response = await axios.get(
-      `https://joinposter.com/api/menu.getProducts?token='739097:7644670d44297af5ead5989fce1a704f'`,
-      {
-        mode: 'cors',
-        // headers: {
-        //   'Access-Control-Allow-Origin': '*',
-        //   'Content-Type': 'application/json',
-        // },
-      }
-    );
-    dispatch(fetchingSuccess(response.data));
-  } catch (error) {
-    dispatch(fetchingError(error.message));
+axios.defaults.baseURL = `https://joinposter.com/api/menu.getProducts?token='739097:7644670d44297af5ead5989fce1a704f'`;
+
+export const fetchAllProducts = createAsyncThunk(
+  'products/allProducts',
+  async (_, thunkAPI) => {
+    try {
+      const response = await axios.get();
+      return response.data;
+    } catch (error) {
+      return thunkAPI.rejectWithValue(error.message);
+    }
   }
-};
+);
+
+
+// export const fetchAllProducts = () => async dispatch => {
+//   try {
+//     dispatch(fetchingInProgress());
+//     const response = await axios.get(
+//       `https://joinposter.com/api/menu.getProducts?token='739097:7644670d44297af5ead5989fce1a704f'`,
+//       {
+//         mode: 'cors',
+//         // headers: {
+//         //   'Access-Control-Allow-Origin': '*',
+//         //   'Content-Type': 'application/json',
+//         // },
+//       }
+//     );
+//     dispatch(fetchingSuccess(response.data));
+//   } catch (error) {
+//     dispatch(fetchingError(error));
+//   }
+// };
