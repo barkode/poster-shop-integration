@@ -40,9 +40,6 @@ const productsSlice = createSlice({
   },
 });
 
-// export const { fetchingInProgress, fetchingSuccess, fetchingError } =
-// productsSlice.actions;
-
 export const productsReducer = productsSlice.reducer;
 
 // Selectors
