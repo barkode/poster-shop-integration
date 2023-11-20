@@ -1,4 +1,6 @@
 import { createSlice } from '@reduxjs/toolkit';
+import storage from 'redux-persist/lib/storage';
+import { persistReducer } from 'redux-persist';
 
 const basketSlice = createSlice({
   name: 'basket',
@@ -10,9 +12,14 @@ const basketSlice = createSlice({
   },
 });
 
-export const {} = basketSlice.actions;
+const persistConfig = {
+  key: 'basket',
+  storage,
+};
 
-export const basketReducer = basketSlice.reducer;
+export const basketReducer = persistReducer(persistConfig, basketSlice.reducer);
+
+export const {} = basketSlice.actions;
 
 // Selectors
 
