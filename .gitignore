@@ -29,3 +29,6 @@ yarn-error.log*
 # TEMP
 temp/
 tmp/
+
+# package-lock.json
+package-lock.json
