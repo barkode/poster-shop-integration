@@ -19,7 +19,7 @@ const persistConfig = {
 
 export const basketReducer = persistReducer(persistConfig, basketSlice.reducer);
 
-export const {} = basketSlice.actions;
+// export const {} = basketSlice.actions;
 
 // Selectors
 
