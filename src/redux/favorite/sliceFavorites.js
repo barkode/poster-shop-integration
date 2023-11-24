@@ -22,7 +22,7 @@ export const favoritesReducer = persistReducer(
   favoriteSlice.reducer
 );
 
-export const {} = favoriteSlice.actions;
+// export const {} = favoriteSlice.actions;
 
 // Selectors
 
